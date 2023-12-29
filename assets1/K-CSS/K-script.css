@@ -14,6 +14,8 @@
   background:var(--color2);
   border-radius: 10px;
 }
+body {
+  overflow-x: hidden;}
 .container-fluid{
   background-color:#26272b;
 }
@@ -44,7 +46,8 @@
 .ME p{
     align-content: center;
     color: var(--color2);
-    margin-top: 15%;
+    margin-top: 22%;
+    margin-bottom: 3%;
 }
 .ME h4{
      text-align:center; 
@@ -53,6 +56,18 @@
     font-family: 'Courier New', Courier, monospace;
     
 }
+.ME {
+  max-width: 1050px; /* Set a maximum width for the container */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 0 10px; /* Add padding to create space on both sides */
+}
+
+.about-content {
+  text-align: justify; 
+}
+
+
+
 :root{
     --color1: #010209;
     --color2: #B1B2FF;
@@ -104,6 +119,7 @@ body{
   max-width: 1000px;
   position: relative;
   margin: auto;
+  margin-top: 5%;
 }
 
 /* Number text (1/3 etc) */
@@ -150,7 +166,57 @@ body{
   align-content: center;
   color: var(--color2);
   margin-top: 10%;
+  margin-bottom: 5%;
  
+}
+.project p{
+  align-content: center;
+  color: var(--color2);
+  margin-top: 10%;
+}
+.card-link {
+  text-decoration: none;
+  color: inherit;
+ 
+}
+.container{
+  margin-top: 5%;
+  
+}
+
+.card-body{
+  background-color:#26272b;
+ 
+}
+.card-body p{
+  color: aliceblue;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+/* .card-body:hover{
+  transform: translate(5px, -5px);
+}  */
+.card-link:hover {
+  color: var(--color2);
+}
+/* Define a CSS class for the fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply the animation to the card-body within the project cards */
+.card-body {
+  animation: fadeIn 0.3s ease-in-out; /* Adjust the animation duration and easing as needed */
+}
+.card-body:hover {
+  transform: scale(1.05); /* Adjust the scale factor as needed */
 }
 
 .site-footer
